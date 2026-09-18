@@ -118,7 +118,7 @@ function createHandler({ createClient, getAccessToken, telemetry, env = process.
         clearTimeout(timer);
         if (client) {
           try {
-            Promise.resolve(client.end()).catch(() => {});
+            await client.end();
           } catch {
             // Force-close below even if graceful shutdown failed.
           } finally {
