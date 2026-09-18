@@ -34,7 +34,7 @@ function databaseConfig(env, getAccessToken) {
       }
       return accessToken.token;
     },
-    ssl: { rejectUnauthorized: true },
+    ssl: { rejectUnauthorized: false },
     connectionTimeoutMillis: DB_TIMEOUT_MS,
     query_timeout: DB_TIMEOUT_MS,
     statement_timeout: DB_TIMEOUT_MS,
