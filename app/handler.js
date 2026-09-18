@@ -4,7 +4,7 @@ const { readFileSync } = require('node:fs');
 const { join } = require('node:path');
 const { performance } = require('node:perf_hooks');
 
-const DB_TIMEOUT_MS = 5000;
+const DB_TIMEOUT_MS = 4500;
 const MAX_DB_ATTEMPTS = 4;
 const assets = new Map([
   ['/', ['index.html', 'text/html; charset=utf-8']],
